@@ -1,6 +1,6 @@
 ﻿# Cypress-API-playground
  
-This is a [Javascript] project using [Cypress](https://www.cypress.io) and [GraphQL](https://graphql.org)
+This is a Javascript project using [Cypress](https://www.cypress.io) and [GraphQL](https://graphql.org)
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ yarn add cypress --dev
 pnpm add --save-dev cypress
 ```
 
-Then, Open [Cypress] for the first time
+Then, Open Cypress for the first time
 ```bash
 npx cypress open
 # or
