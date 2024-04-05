@@ -33,4 +33,4 @@ This project uses the [Rick & Morty GraphQL](https://rickandmortyapi.com)
 
 To learn more about Cypress, take a look at the following resources:
 
-- [Cypress Documentation](https://docs.cypress.io) - learn about Cypress features and how other types of applications.
+- [Cypress Documentation](https://docs.cypress.io) - learn about Cypress features and other types of applications.
