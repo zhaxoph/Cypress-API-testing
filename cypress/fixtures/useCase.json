@@ -1,0 +1,33 @@
+{
+  "allCharactersUseCase":{
+    "smithFamily":[
+      {
+          "name": "Rick Sanchez",
+          "status": "Alive"
+      },
+      {
+          "name": "Morty Smith",
+          "status": "Alive"
+        },
+        {
+
+          "name": "Beth Smith",
+          "status": "Alive"
+        },
+        {
+
+          "name": "Jerry Smith",
+          "status": "Alive"
+        },
+        {
+
+          "name": "Summer Smith",
+          "status": "Alive"
+        
+    }
+   
+  ]
+    
+  }
+  
+}
