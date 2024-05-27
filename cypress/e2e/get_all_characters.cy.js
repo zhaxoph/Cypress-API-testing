@@ -1,6 +1,5 @@
-describe("Test all characters graphql call and evaluate the asserts", () => {
-let smithFamily; // declare a variable to store the smithFamily array from the fixture
-
+describe("Test all characters graphql call and evaluate the asserts with the Smith Family", () => {
+let smithFamily;
 before(() => {
     cy.fixture('/useCase.json').then(data => {
         smithFamily = data.allCharactersUseCase.smithFamily; // get the smithFamily array from the fixture

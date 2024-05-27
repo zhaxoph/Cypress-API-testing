@@ -6,17 +6,14 @@ This project uses as well [Cypress.api calls](https://github.com/filiphric/cypre
 
 ## Getting Started
 
-First, install cypress:
+First, clone this repo
 
+Then, run yarn install
 ```bash
-npm install cypress --save-dev
-# or
-yarn add cypress --dev
-# or
-pnpm add --save-dev cypress
+yarn install
 ```
 
-Then, Open Cypress for the first time
+And last, run yarn install Cypress for the first time
 ```bash
 npx cypress open
 # or
@@ -25,7 +22,7 @@ yarn cypress open
 pnpm cypress open
 ```
 
-And last, clone this repo.
+
 
 You can edit the files by modifying the `cypress/e2e/` files. The program auto-updates as you edit the file.
 
