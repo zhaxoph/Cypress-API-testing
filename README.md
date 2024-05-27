@@ -2,7 +2,7 @@
  
 This is a Javascript project using [Cypress](https://www.cypress.io) and [GraphQL](https://graphql.org)
 
-This project uses as well [Cypress.api calls](https://github.com/filiphric/cypress-plugin-api) all the credits to the author. 
+This project uses as well [Cypress.api calls](https://github.com/filiphric/cypress-plugin-api) all the credit to the [author](https://github.com/filiphric). 
 
 ## Getting Started
 
