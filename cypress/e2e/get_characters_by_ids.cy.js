@@ -219,7 +219,8 @@ describe("Test CharactersByIds graphql call and evaluate the asserts", () => {
     }).then((response) => {
       expect(response.status).to.eq(200);
       let characters = response.body.data.charactersByIds; // get the characters array from the response
-      characters.forEach((element) => { // loop through the characters array
+      characters.forEach((element) => {
+        // loop through the characters array
         expect(element.status).to.eq("Alive"); // assert the status of the character
         expect(element.species).to.eq("Human"); // assert the species of the character
         expect(element.species).to.not.eq("Alien"); // assert the species of the character

@@ -1,5 +1,5 @@
 describe("Test locations graphql calls and evaluate the asserts", () => {
-    let locations; // declare a variable to store the locations array from the fixture
+  let locations; // declare a variable to store the locations array from the fixture
   before(() => {
     cy.fixture("/useCase.json").then((data) => {
       locations = data.dimensionLocations.c137; // get the locations array from the fixture
@@ -23,7 +23,7 @@ describe("Test locations graphql calls and evaluate the asserts", () => {
             }
           }`,
         variables: {
-          locationId: locations[0].id
+          locationId: locations[0].id,
         },
       }),
     }).then((response) => {
@@ -51,7 +51,7 @@ describe("Test locations graphql calls and evaluate the asserts", () => {
             }
           }`,
         variables: {
-          locationId: locations[1].id
+          locationId: locations[1].id,
         },
       }),
     }).then((response) => {
@@ -79,7 +79,7 @@ describe("Test locations graphql calls and evaluate the asserts", () => {
             }
           }`,
         variables: {
-          locationId: locations[2].id
+          locationId: locations[2].id,
         },
       }),
     }).then((response) => {
@@ -107,7 +107,7 @@ describe("Test locations graphql calls and evaluate the asserts", () => {
             }
           }`,
         variables: {
-          locationId: locations[3].id
+          locationId: locations[3].id,
         },
       }),
     }).then((response) => {
@@ -135,7 +135,7 @@ describe("Test locations graphql calls and evaluate the asserts", () => {
             }
           }`,
         variables: {
-          locationId: locations[4].id
+          locationId: locations[4].id,
         },
       }),
     }).then((response) => {
@@ -172,19 +172,18 @@ describe("Test locations graphql calls and evaluate the asserts", () => {
           }
         }`,
         variables: {
-          "filter": {
-            "dimension": "C-137",
+          filter: {
+            dimension: "C-137",
           },
-          "page": 1
+          page: 1,
         },
       }),
     }).then((response) => {
       expect(response.status).to.eq(200);
       let locations = response.body.data.locations.results;
-      locations.forEach(element => {
+      locations.forEach((element) => {
         expect(element.dimension).to.eq("Dimension C-137"); // assert the dimension of the location
       });
     });
   });
-
 });
