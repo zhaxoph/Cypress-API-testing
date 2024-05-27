@@ -1,33 +1,84 @@
 {
-  "allCharactersUseCase":{
-    "smithFamily":[
+  "allCharactersUseCase": {
+    "smithFamily": [
       {
-          "name": "Rick Sanchez",
-          "status": "Alive"
+        "name": "Rick Sanchez",
+        "status": "Alive"
       },
       {
-          "name": "Morty Smith",
-          "status": "Alive"
-        },
-        {
-
-          "name": "Beth Smith",
-          "status": "Alive"
-        },
-        {
-
-          "name": "Jerry Smith",
-          "status": "Alive"
-        },
-        {
-
-          "name": "Summer Smith",
-          "status": "Alive"
-        
-    }
-   
-  ]
-    
+        "name": "Morty Smith",
+        "status": "Alive"
+      },
+      {
+        "name": "Beth Smith",
+        "status": "Alive"
+      },
+      {
+        "name": "Jerry Smith",
+        "status": "Alive"
+      },
+      {
+        "name": "Summer Smith",
+        "status": "Alive"
+      }
+    ]
+  },
+  "allCharactersIDUseCase": {
+    "smithFamily": [
+      {
+        "id": 1,
+        "name": "Rick Sanchez",
+        "status": "Alive"
+      },
+      {
+        "id": 2,
+        "name": "Morty Smith",
+        "status": "Alive"
+      },
+      {
+        "id": 4,
+        "name": "Beth Smith",
+        "status": "Alive"
+      },
+      {
+        "id": 5,
+        "name": "Jerry Smith",
+        "status": "Alive"
+      },
+      {
+        "id": 3,
+        "name": "Summer Smith",
+        "status": "Alive"
+      }
+    ]
+  },
+  "dimensionLocations": {
+    "c137": [
+      {
+        "id": 1,
+        "name": "Earth (C-137)",
+        "type": "Planet"
+      },
+      {
+        "id": 5,
+        "name": "Anatomy Park",
+        "type": "Microverse"
+      },
+      {
+        "id": 18,
+        "name": "Mr. Goldenfold's dream",
+        "type": "Dream"
+      },
+      {
+        "id": 46,
+        "name": "Zigerion's Base",
+        "type": "Space station"
+      },
+      {
+        "id": 70,
+        "name": "Snuffles' Dream",
+        "type": "Dream"
+      }
+    ]
   }
-  
 }

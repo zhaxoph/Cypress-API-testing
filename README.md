@@ -2,6 +2,8 @@
  
 This is a Javascript project using [Cypress](https://www.cypress.io) and [GraphQL](https://graphql.org)
 
+This project uses as well [Cypress.api calls](https://github.com/filiphric/cypress-plugin-api) all the credits to the author. 
+
 ## Getting Started
 
 First, install cypress:

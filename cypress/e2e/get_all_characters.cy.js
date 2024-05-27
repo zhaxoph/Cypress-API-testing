@@ -1,9 +1,9 @@
 describe("Test all characters graphql call and evaluate the asserts", () => {
-let smithFamily;
+let smithFamily; // declare a variable to store the smithFamily array from the fixture
 
 before(() => {
     cy.fixture('/useCase.json').then(data => {
-        smithFamily = data.allCharactersUseCase.smithFamily;
+        smithFamily = data.allCharactersUseCase.smithFamily; // get the smithFamily array from the fixture
     });
 });
   it("gets all characters with name Rick Sanchez and its status Alive", () => {
@@ -26,15 +26,15 @@ before(() => {
                 image
                 }}}`,
                 variables: {
-                    name: smithFamily[0].name,
-                    status: smithFamily[0].status,
+                    name: smithFamily[0].name, // get the name from the fixture
+                    status: smithFamily[0].status, // get the status from the fixture
                     
                 },
         }),
     }).then((response) => {
         expect(response.status).to.eq(200);
-        expect(response.body.data.characters.results[0].name).to.eq(smithFamily[0].name);
-        expect(response.body.data.characters.results[0].status).to.eq(smithFamily[0].status);
+        expect(response.body.data.characters.results[0].name).to.eq(smithFamily[0].name); // assert the name of the character
+        expect(response.body.data.characters.results[0].status).to.eq(smithFamily[0].status); // assert the status of the character
   });
   
 });
@@ -58,15 +58,15 @@ it("gets all characters with name Morty Smith and its status Alive", () => {
                 image
                 }}}`,
                 variables: {
-                    name: smithFamily[1].name,
-                    status: smithFamily[1].status,
+                    name: smithFamily[1].name, // get the name from the fixture
+                    status: smithFamily[1].status, // get the status from the fixture
                     
                 },
         }),
     }).then((response) => {
         expect(response.status).to.eq(200);
-        expect(response.body.data.characters.results[0].name).to.eq(smithFamily[1].name);
-        expect(response.body.data.characters.results[0].status).to.eq(smithFamily[1].status);
+        expect(response.body.data.characters.results[0].name).to.eq(smithFamily[1].name); // assert the name of the character
+        expect(response.body.data.characters.results[0].status).to.eq(smithFamily[1].status); // assert the status of the character
   });
   
 });
@@ -91,15 +91,15 @@ it("gets all characters with name Beth Smith and its status Alive", () => {
                 image
                 }}}`,
                 variables: {
-                    name: smithFamily[2].name,
-                    status: smithFamily[2].status,
+                    name: smithFamily[2].name, // get the name from the fixture
+                    status: smithFamily[2].status, // get the status from the fixture
                     
                 },
         }),
     }).then((response) => {
         expect(response.status).to.eq(200);
-        expect(response.body.data.characters.results[0].name).to.eq(smithFamily[2].name);
-        expect(response.body.data.characters.results[0].status).to.eq(smithFamily[2].status);
+        expect(response.body.data.characters.results[0].name).to.eq(smithFamily[2].name); // assert the name of the character
+        expect(response.body.data.characters.results[0].status).to.eq(smithFamily[2].status);  // assert the status of the character
   });
   
 });
@@ -123,15 +123,15 @@ it("gets all characters with name Jerry Smith and its status Alive", () => {
                 image
                 }}}`,
                 variables: {
-                    name: smithFamily[3].name,
-                    status: smithFamily[3].status,
+                    name: smithFamily[3].name, // get the name from the fixture
+                    status: smithFamily[3].status, // get the status from the fixture
                     
                 },
         }),
     }).then((response) => {
         expect(response.status).to.eq(200);
-        expect(response.body.data.characters.results[0].name).to.eq(smithFamily[3].name);
-        expect(response.body.data.characters.results[0].status).to.eq(smithFamily[3].status);
+        expect(response.body.data.characters.results[0].name).to.eq(smithFamily[3].name); // assert the name of the character
+        expect(response.body.data.characters.results[0].status).to.eq(smithFamily[3].status); // assert the status of the character
   });
   
 });
@@ -155,16 +155,15 @@ it("gets all characters with name Summer Smith and its status Alive", () => {
                 image
                 }}}`,
                 variables: {
-                    name: smithFamily[4].name,
-                    status: smithFamily[4].status,
+                    name: smithFamily[4].name, // get the name from the fixture
+                    status: smithFamily[4].status, // get the status from the fixture
                     
                 },
         }),
     }).then((response) => {
         expect(response.status).to.eq(200);
-        expect(response.body.data.characters.results[0].name).to.eq(smithFamily[4].name);
-        expect(response.body.data.characters.results[0].status).to.eq(smithFamily[4].status);
-  });
-  
+        expect(response.body.data.characters.results[0].name).to.eq(smithFamily[4].name); // assert the name of the character
+        expect(response.body.data.characters.results[0].status).to.eq(smithFamily[4].status); // assert the status of the character
+    });
 });
 });
