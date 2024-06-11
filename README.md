@@ -13,7 +13,7 @@ Then, run yarn install
 yarn install
 ```
 
-And last, run yarn install Cypress for the first time
+And last, run Cypress for the first time
 ```bash
 npx cypress open
 # or
